@@ -18,25 +18,30 @@ body {
     height: 100vh;
 }
 
-.container-a {
+.qr-card {
     background-color: white;
     border-radius: 4%;
     padding-bottom: 2em;
+    width: 330px;
+    max-width: 90%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.text-a {
+h1 {
     font-weight: 700;
     color: hsl(218, 44%, 22%);
     font-size: 22px;
+    padding: 0 22px;
 }
 
 p {
     color: hsl(216, 15%, 48%);
     font-size: 15px;
+    padding-top: 0.5em;
 }
 
 img {
-    width: 300px;
+    width: 295px;
     border-radius: 4%;
 }
 
@@ -46,12 +51,16 @@ img {
 }
 
 @media (max-width: 375px){
-    img {
-        width: 260px;
+    .qr-card {
+        width: 280px;
     }
 
-    .text-a {
-        font-size: 20px;
+    img {
+        width: 250px;
+    }
+
+    h1 {
+        font-size: 19px;
     }
      p{
         font-size: 14px;
